@@ -24,7 +24,31 @@ class EdifyGenerator(edify_generator.EdifyGenerator):
     def AssertDevice(self, device):
       edify_generator.EdifyGenerator.AssertDevice(self, device)
       self.script.append('show_progress(0.15, 5);');
-      self.script.append('ui_print("Checking state of BML/MTD...");')
+      self.script.append('ui_print("");')
+      self.script.append('ui_print("            ,,cSS$");')
+      self.script.append('ui_print("            $$$$$$    ,,ccc,,    ,,cSS$   ,c$$$$SScc,");')
+      self.script.append('ui_print("    ,ccS$$$$$$$$$$ ,cS$$$$$$$Sc, $$$$$$  ,S$$$S$$$$$$$$$SScc,");')
+      self.script.append('ui_print("   ;$$$$$*`*$$$$$$;$$$$$*`*$$$$$;$$$$$$,cS$$$*`$$$$$$*`l$$$$$;");')
+      self.script.append('ui_print("  ;l$$$$l   $$$$$$l$$$$$   $$$$$l$$$$$$$$$S*`  $$$$$$  ;$$$$$l");')
+      self.script.append('ui_print("  l$$$$$$$$$$$$$$$$$$$$$   $$$$$$$$$$$$$$Scc,, $$$$$$  ;$$$$$l");')
+      self.script.append('ui_print("  $$$$$$    $$$$$$$$$$$$   $$$$$$$$$$$$`l$$$Sc,$$$$$$c,l$$$$$;");')
+      self.script.append('ui_print("  $$$$$$;   $$$$$$l$$$$$   $$$$$l$$$$$$ ;$$$$$$$$$$$$$$$SS**'");')
+      self.script.append('ui_print("  l$$$$$l   $$$$$$;$$$$$c,c$$$$$;$$$$$$  $$$$$$$$$$$$");')
+      self.script.append('ui_print("  ;$$$$$$;  `*S$$$ `*S$$$$$$$S*` $$$$$$  $$$$$$$$$$$$");')
+      self.script.append('ui_print("   l$$$$$l            ``***``    $$S**`  $$$$$$`*S$$$");')
+      self.script.append('ui_print("-- ;S**``  ----------------------------- `**S$$ ------- --- -");')
+      self.script.append('ui_print(";;[ . . A O K P - S G T 7 ];;; ,c$$$$*`,cS$$Sc,*$$$$$*,c$$$c,");')
+      self.script.append('ui_print(";;[ ;;;;;;;;; by stimpz0r ];;; $$; ;;; $$ ;; $$  $$ ;;;;;;`$$");')
+      self.script.append('ui_print(";;[                       ];;;,`*$$$Sc,*$,,,,$$  $$ ;;;;;; $$");')
+      self.script.append('ui_print(";;[   ** MTD ** BUILD #40 ];;;''    ;$$ `````$$  $$ ;;;;;; $$");')
+      self.script.append('ui_print(";;[       CDMA (SCH-I800) ];;;,`*$$$$*`ccS$$$*`, $$ ;;;;;; $$");')
+      self.script.append('ui_print("- --- ---------------------------------------------------- *$");')
+      self.script.append('ui_print("(::) AOKP (Android Open Kang Project) by TeamKang");')
+      self.script.append('ui_print("(::) SGT7 device/vendor/kernel by SGT7 ICS TE4M");')
+      self.script.append('ui_print("(::) built and SGT7 components AOKPerized by stimpz0r");')
+      self.script.append('ui_print("---------------------------------------------------- --- -- -");')
+      self.script.append('ui_print("");')
+      self.script.append('ui_print("(::) checking state of BML/MTD...");')
       self.script.append(
             ('package_extract_file("updater.sh", "/tmp/updater.sh");\n'
              'set_perm(0, 0, 0777, "/tmp/updater.sh");'))
@@ -49,8 +73,8 @@ class EdifyGenerator(edify_generator.EdifyGenerator):
 
       self.script.append('package_extract_file("boot.img", "/tmp/boot.img");')
       self.script.append('assert(run_program("/tmp/updater.sh", "cdma") == 0);')
-      self.script.append('ui_print("Formatting of MTD complete...");')
-      self.script.append('ui_print("Installing system...");')
+      self.script.append('ui_print("(::) formatting of MTD complete...");')
+      self.script.append('ui_print("(::) installing system...");')
 
     def RunBackup(self, command):
       edify_generator.EdifyGenerator.RunBackup(self, command)
