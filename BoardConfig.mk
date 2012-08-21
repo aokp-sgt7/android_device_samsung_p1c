@@ -26,7 +26,7 @@ TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := ./device/samsung/p1c/releasetools/p
 TARGET_RELEASETOOL_IMG_FROM_TARGET_SCRIPT := ./device/samsung/p1c/releasetools/p1c_img_from_target_files
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/samsung/p1
+TARGET_KERNEL_SOURCE := kernel/samsung/p1c
 TARGET_KERNEL_CONFIG := cyanogenmod_p1c_defconfig
 
 # Asserts
