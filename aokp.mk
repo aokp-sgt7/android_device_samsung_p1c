@@ -1,8 +1,8 @@
 ## Specify phone tech before including full_phone
-$(call inherit-product, vendor/aokp/config/cdma.mk)
+$(call inherit-product, vendor/aokp/configs/cdma.mk)
 
 # Inherit some common AOKP stuff.
-$(call inherit-product, vendor/aokp/config/common_tablet.mk)
+$(call inherit-product, vendor/aokp/configs/common_tablet_small.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/p1c/full_p1c.mk)
