@@ -83,4 +83,4 @@ $(call inherit-product, device/samsung/p1-common/device_base.mk)
 # half of the device-specific product definition file takes care
 # of the aspects that require proprietary drivers that aren't
 # commonly available
-#$(call inherit-product-if-exists, vendor/samsung/p1c/p1c-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/p1c/p1c-vendor.mk)
