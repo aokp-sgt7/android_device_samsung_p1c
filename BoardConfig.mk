@@ -21,6 +21,9 @@
 # Import p1-common config
 include device/samsung/p1-common/BoardConfigCommon.mk
 
+# Recovery fstab
+TARGET_RECOVERY_FSTAB := device/samsung/p1c/fstab.p1c
+
 # Asserts
 TARGET_OTA_ASSERT_DEVICE := galaxytab7c,p1c,SCH-I800,SPH-P100,vzwtab
 
